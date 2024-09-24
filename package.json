@@ -1,0 +1,15 @@
+{
+  "name": "cruduser",
+  "version": "1.0.0",
+  "main": "index.hmtl",
+  "author": "MatFon73",
+  "license": "ISC",
+  "description": "Crud basico de html, js y php",
+  "repository": "https://github.com/MatFon73/CrudUser.git",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "sweetalert2": "^11.14.0"
+  }
+}
