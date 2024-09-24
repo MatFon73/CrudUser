@@ -1,0 +1,37 @@
+body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h3 {
+    margin-top: 2rem;
+  }
+  
+  .row {
+    margin-bottom: 1rem;
+  }
+  .row .row {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  .col {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid;
+    border-radius: 1%;
+    margin: .5%;
+  }
+  
+  hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .DataAdd, .DataEdit{
+    padding: 4%;
+  }
+
+  table{
+    margin-top: 1rem;
+  }
