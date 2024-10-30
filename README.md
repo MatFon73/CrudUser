@@ -26,7 +26,7 @@ Sigue estos pasos para instalar y configurar el proyecto en un entorno de desarr
     ```bash
     git clone https://github.com/MatFon73/CrudUser.git
 
-    cd cyberdev-studios
+    cd CrudUser
     ```
 
 2. **Instalar las dependencias:**
