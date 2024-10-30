@@ -1,0 +1,19 @@
+{
+    "name": "mateo/cruduser",
+    "autoload": {
+        "psr-4": {
+            "Mateo\\Prueba\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mateo Fonseca"
+        }
+    ],
+    "require": {
+        "fortawesome/font-awesome": "^6.6",
+        "components/jquery": "^3.7",
+        "twbs/bootstrap": "^5.3",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

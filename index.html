@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="public/css/style.css">
+
+    <!-- SweetAlert2 CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!-- boostrap -->
+    <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="vendor/fortawesome/font-awesome/css/all.min.css">
+
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Crud - User</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center">Registro de usuarios</h3>
+                <form class="DataAdd">
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label"><i class="fa-solid fa-user"></i>
+                            Nombre</label>
+                        <input type="text" class="form-control" id="NameRegister">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputDocument" class="form-label"><i class="fa-solid fa-id-card-clip"></i>
+                            Documento</label>
+                        <input type="number" class="form-control" id="DocumentRegister">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputType" class="form-label"><i class="fa-solid fa-circle-check"></i>
+                            Tipo de usuario</label>
+                        <select class="form-control" name="select" id="TypeRegister">
+                            <option value="">Seleccionar...</option>
+                            <option value="1">Administrador</option>
+                            <option value="2">Empleado</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-dark" id="CreateButton">Registrar</button>
+                </form>
+            </div>
+            <div class="col">
+                <h3 class="text-center">Consulta de usuarios</h3>
+                <form id="DataTable">
+                    <div class="container">
+                        <button class="btn btn-default" title="Borrar" id="DeleteButton" type="submit"><i
+                                class="fa-solid fa-trash"></i></button>
+                        <button class="btn btn-default" title="Editar" id="ShowEditButton" type="submit"><i
+                                class="fa-solid fa-pen-to-square"></i></button>
+                                <input type="text" id="Search" class="form-control"
+                                placeholder="Busqueda por documento">
+                    </div>
+                    <div id="data"></div>
+                </form>
+            </div>
+            <div class="col">
+                <h3 class="text-center">Edición de usuarios</h3>
+                <form class="DataEdit">
+                    <input type="text" style="display: none;" id="IdUserEdit">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label"><i class="fa-solid fa-user"></i>
+                            Nombre</label>
+                        <input type="text" class="form-control" id="NameEdit" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"><i class="fa-solid fa-id-card-clip"></i>
+                            Documento</label>
+                        <input type="number" class="form-control" id="DocumentEdit" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputType" class="form-label"><i class="fa-solid fa-circle-check"></i>
+                            Tipo de usuario</label>
+                        <select class="form-control" name="select" id="TypeEdit" disabled>
+                            <option value="" selected>Seleccionar...</option>
+                            <option value="1">Administrador</option>
+                            <option value="2">Empleado</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-dark" id="EditButton"
+                        disabled>Editar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="vendor/components/jquery/jquery.js"></script>
+<script src="public/js/CrudUser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+<script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</html>
